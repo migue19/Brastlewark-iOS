@@ -6,7 +6,10 @@
 //
 import Foundation
 struct BrastlewarkCity: Codable {
-    let Brastlewark: [citizensBrastlewark]
+    let brastlewark: [citizensBrastlewark]
+    private enum CodingKeys: String, CodingKey {
+        case brastlewark = "Brastlewark"
+    }
 }
 struct citizensBrastlewark: Codable {
     let id: Int
