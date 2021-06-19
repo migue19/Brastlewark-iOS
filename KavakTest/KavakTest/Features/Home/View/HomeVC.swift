@@ -11,10 +11,11 @@ class HomeVC: UIViewController {
     var presenter: HomePresenterProtocol?
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        getData()
     }
-
+    func getData() {
+        presenter?.getInformation()
+    }
 }
 /// Protocolo para recibir datos de presenter.
 extension HomeVC: HomeViewProtocol {

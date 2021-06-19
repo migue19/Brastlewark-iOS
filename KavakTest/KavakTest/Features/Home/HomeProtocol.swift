@@ -19,10 +19,12 @@ protocol HomeRouterProtocol {
 /// Protocolo que define los métodos y atributos para el Presenter de Home
 protocol HomePresenterProtocol {
     // VIEW -> PRESENTER
+    func getInformation()
 }
 /// Protocolo que define los métodos y atributos para el Interactor de Home
 protocol HomeInteractorInputProtocol {
     // PRESENTER -> INTERACTOR
+    func getBrastlewark()
 }
 /// Protocolo que define los métodos y atributos para el Interactor de Home
 protocol HomeInteractorOutputProtocol {
