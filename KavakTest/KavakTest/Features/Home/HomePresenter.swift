@@ -20,4 +20,7 @@ extension HomePresenter: HomePresenterProtocol {
     
 }
 extension HomePresenter: HomeInteractorOutputProtocol {
+    func sendData(data: [citizensBrastlewark]) {
+        view?.showData(data: data)
+    }
 }

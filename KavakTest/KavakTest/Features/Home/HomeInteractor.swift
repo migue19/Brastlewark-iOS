@@ -19,11 +19,21 @@ extension HomeInteractor: HomeInteractorInputProtocol {
             }
             let decoder = JSONDecoder()
             do {
-                let city = try decoder.decode(BrastlewarkCity.self, from: data)
-                print(city)
+                let brastlewarkCity = try decoder.decode(BrastlewarkCity.self, from: data)
+                self.receiveData(entity: brastlewarkCity)
             } catch {
-                print(error)
+                self.receiveError(message: error.localizedDescription)
             }
+        }
+    }
+    func receiveData(entity: BrastlewarkCity) {
+        DispatchQueue.main.async {
+            self.presenter?.sendData(data: entity.brastlewark)
+        }
+    }
+    func receiveError(message: String) {
+        DispatchQueue.main.async {
+            print(message)
         }
     }
 }

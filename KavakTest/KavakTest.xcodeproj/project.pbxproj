@@ -8,6 +8,11 @@
 
 /* Begin PBXBuildFile section */
 		B66CA751A504FD594794B98A /* Pods_KavakTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2ADAB54CF7D9537A6E14421B /* Pods_KavakTest.framework */; };
+		F287F257267EAEE7009D5DDA /* HomeCollectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F287F255267EAEE7009D5DDA /* HomeCollectionCell.swift */; };
+		F287F258267EAEE7009D5DDA /* HomeCollectionCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F287F256267EAEE7009D5DDA /* HomeCollectionCell.xib */; };
+		F287F260267EB151009D5DDA /* HomeFriendCollectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F287F25E267EB151009D5DDA /* HomeFriendCollectionCell.swift */; };
+		F287F261267EB151009D5DDA /* HomeFriendCollectionCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F287F25F267EB151009D5DDA /* HomeFriendCollectionCell.xib */; };
+		F287F265267EB743009D5DDA /* ImageLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = F287F264267EB743009D5DDA /* ImageLoader.swift */; };
 		F2D4951A267E8A7300C72E65 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2D49519267E8A7300C72E65 /* AppDelegate.swift */; };
 		F2D4951C267E8A7300C72E65 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2D4951B267E8A7300C72E65 /* SceneDelegate.swift */; };
 		F2D49523267E8A7300C72E65 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F2D49522267E8A7300C72E65 /* Assets.xcassets */; };
@@ -26,6 +31,11 @@
 		2ADAB54CF7D9537A6E14421B /* Pods_KavakTest.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_KavakTest.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		4D23264BCFB1E78CF955E875 /* Pods-KavakTest.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KavakTest.debug.xcconfig"; path = "Target Support Files/Pods-KavakTest/Pods-KavakTest.debug.xcconfig"; sourceTree = "<group>"; };
 		E0308AB8CC662EEEF21D3192 /* Pods-KavakTest.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KavakTest.release.xcconfig"; path = "Target Support Files/Pods-KavakTest/Pods-KavakTest.release.xcconfig"; sourceTree = "<group>"; };
+		F287F255267EAEE7009D5DDA /* HomeCollectionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeCollectionCell.swift; sourceTree = "<group>"; };
+		F287F256267EAEE7009D5DDA /* HomeCollectionCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeCollectionCell.xib; sourceTree = "<group>"; };
+		F287F25E267EB151009D5DDA /* HomeFriendCollectionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeFriendCollectionCell.swift; sourceTree = "<group>"; };
+		F287F25F267EB151009D5DDA /* HomeFriendCollectionCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeFriendCollectionCell.xib; sourceTree = "<group>"; };
+		F287F264267EB743009D5DDA /* ImageLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageLoader.swift; sourceTree = "<group>"; };
 		F2D49516267E8A7300C72E65 /* KavakTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KavakTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F2D49519267E8A7300C72E65 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F2D4951B267E8A7300C72E65 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -71,6 +81,25 @@
 			path = Pods;
 			sourceTree = "<group>";
 		};
+		F287F253267EAE1A009D5DDA /* cell */ = {
+			isa = PBXGroup;
+			children = (
+				F287F255267EAEE7009D5DDA /* HomeCollectionCell.swift */,
+				F287F256267EAEE7009D5DDA /* HomeCollectionCell.xib */,
+				F287F25E267EB151009D5DDA /* HomeFriendCollectionCell.swift */,
+				F287F25F267EB151009D5DDA /* HomeFriendCollectionCell.xib */,
+			);
+			path = cell;
+			sourceTree = "<group>";
+		};
+		F287F263267EB719009D5DDA /* Commons */ = {
+			isa = PBXGroup;
+			children = (
+				F287F264267EB743009D5DDA /* ImageLoader.swift */,
+			);
+			path = Commons;
+			sourceTree = "<group>";
+		};
 		F2D4950D267E8A7300C72E65 = {
 			isa = PBXGroup;
 			children = (
@@ -94,6 +123,7 @@
 			children = (
 				F2D49519267E8A7300C72E65 /* AppDelegate.swift */,
 				F2D4951B267E8A7300C72E65 /* SceneDelegate.swift */,
+				F287F263267EB719009D5DDA /* Commons */,
 				F2D62D6C267E90EC00FA2DAC /* Constants */,
 				F2D49530267E8B2200C72E65 /* Features */,
 				F2D49522267E8A7300C72E65 /* Assets.xcassets */,
@@ -135,6 +165,7 @@
 		F2D62D6F267E925200FA2DAC /* View */ = {
 			isa = PBXGroup;
 			children = (
+				F287F253267EAE1A009D5DDA /* cell */,
 				F2D49540267E8BAA00C72E65 /* HomeVC.swift */,
 				F2D49541267E8BAA00C72E65 /* HomeVC.xib */,
 			);
@@ -208,9 +239,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F287F258267EAEE7009D5DDA /* HomeCollectionCell.xib in Resources */,
 				F2D49526267E8A7300C72E65 /* LaunchScreen.storyboard in Resources */,
 				F2D49543267E8BAB00C72E65 /* HomeVC.xib in Resources */,
 				F2D49523267E8A7300C72E65 /* Assets.xcassets in Resources */,
+				F287F261267EB151009D5DDA /* HomeFriendCollectionCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -263,10 +296,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F287F257267EAEE7009D5DDA /* HomeCollectionCell.swift in Sources */,
 				F2D49539267E8B4C00C72E65 /* HomePresenter.swift in Sources */,
+				F287F265267EB743009D5DDA /* ImageLoader.swift in Sources */,
 				F2D49542267E8BAA00C72E65 /* HomeVC.swift in Sources */,
 				F2D4953A267E8B4C00C72E65 /* HomeRouter.swift in Sources */,
 				F2D4951A267E8A7300C72E65 /* AppDelegate.swift in Sources */,
+				F287F260267EB151009D5DDA /* HomeFriendCollectionCell.swift in Sources */,
 				F2D4953B267E8B4C00C72E65 /* HomeInteractor.swift in Sources */,
 				F2D4953C267E8B4C00C72E65 /* HomeProtocol.swift in Sources */,
 				F2D4951C267E8A7300C72E65 /* SceneDelegate.swift in Sources */,

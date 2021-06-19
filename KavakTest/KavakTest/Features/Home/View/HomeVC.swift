@@ -9,14 +9,38 @@ import UIKit
 
 class HomeVC: UIViewController {
     var presenter: HomePresenterProtocol?
+    var dataSource: [citizensBrastlewark] = [citizensBrastlewark]()
+    @IBOutlet weak var collectionView: UICollectionView!
     override func viewDidLoad() {
         super.viewDidLoad()
-        getData()
+        setupCollectionView()
     }
     func getData() {
         presenter?.getInformation()
     }
+    func setupCollectionView() {
+        let nib = UINib(nibName: "HomeCollectionCell", bundle: nil)
+        collectionView.dataSource = self
+        collectionView.delegate = self
+        collectionView.register(nib, forCellWithReuseIdentifier: "HomeCollectionCell")
+        getData()
+    }
+}
+extension HomeVC: UICollectionViewDelegate, UICollectionViewDataSource {
+    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+        return dataSource.count
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+        guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "HomeCollectionCell", for: indexPath) as? HomeCollectionCell else { return UICollectionViewCell() }
+        cell.setupCell(data: dataSource[indexPath.row])
+        return cell
+    }
 }
 /// Protocolo para recibir datos de presenter.
 extension HomeVC: HomeViewProtocol {
+    func showData(data: [citizensBrastlewark]) {
+        dataSource = data
+        collectionView.reloadData()
+    }
 }
