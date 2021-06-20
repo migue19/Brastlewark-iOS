@@ -16,6 +16,7 @@ class HomeCollectionCell: UICollectionViewCell {
         // Initialization code
     }
     func setupCell(data: citizensBrastlewark) {
+        backgroundColor = .red
         nameLabel.text = data.name
         imageView.downloadImageFrom(url: data.thumbnail, imageMode: .scaleAspectFill)
     }
