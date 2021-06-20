@@ -1,0 +1,508 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		B66CA751A504FD594794B98A /* Pods_KavakTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2ADAB54CF7D9537A6E14421B /* Pods_KavakTest.framework */; };
+		F287F257267EAEE7009D5DDA /* HomeCollectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F287F255267EAEE7009D5DDA /* HomeCollectionCell.swift */; };
+		F287F258267EAEE7009D5DDA /* HomeCollectionCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F287F256267EAEE7009D5DDA /* HomeCollectionCell.xib */; };
+		F287F260267EB151009D5DDA /* HomeFriendCollectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F287F25E267EB151009D5DDA /* HomeFriendCollectionCell.swift */; };
+		F287F261267EB151009D5DDA /* HomeFriendCollectionCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F287F25F267EB151009D5DDA /* HomeFriendCollectionCell.xib */; };
+		F287F265267EB743009D5DDA /* ImageLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = F287F264267EB743009D5DDA /* ImageLoader.swift */; };
+		F2D4951A267E8A7300C72E65 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2D49519267E8A7300C72E65 /* AppDelegate.swift */; };
+		F2D4951C267E8A7300C72E65 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2D4951B267E8A7300C72E65 /* SceneDelegate.swift */; };
+		F2D49523267E8A7300C72E65 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F2D49522267E8A7300C72E65 /* Assets.xcassets */; };
+		F2D49526267E8A7300C72E65 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F2D49524267E8A7300C72E65 /* LaunchScreen.storyboard */; };
+		F2D49539267E8B4C00C72E65 /* HomePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2D49533267E8B4C00C72E65 /* HomePresenter.swift */; };
+		F2D4953A267E8B4C00C72E65 /* HomeRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2D49534267E8B4C00C72E65 /* HomeRouter.swift */; };
+		F2D4953B267E8B4C00C72E65 /* HomeInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2D49535267E8B4C00C72E65 /* HomeInteractor.swift */; };
+		F2D4953C267E8B4C00C72E65 /* HomeProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2D49536267E8B4C00C72E65 /* HomeProtocol.swift */; };
+		F2D49542267E8BAA00C72E65 /* HomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2D49540267E8BAA00C72E65 /* HomeVC.swift */; };
+		F2D49543267E8BAB00C72E65 /* HomeVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = F2D49541267E8BAA00C72E65 /* HomeVC.xib */; };
+		F2D62D6E267E910700FA2DAC /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2D62D6D267E910700FA2DAC /* Constants.swift */; };
+		F2D62D72267E927400FA2DAC /* HomeEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2D62D71267E927400FA2DAC /* HomeEntity.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		2ADAB54CF7D9537A6E14421B /* Pods_KavakTest.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_KavakTest.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4D23264BCFB1E78CF955E875 /* Pods-KavakTest.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KavakTest.debug.xcconfig"; path = "Target Support Files/Pods-KavakTest/Pods-KavakTest.debug.xcconfig"; sourceTree = "<group>"; };
+		E0308AB8CC662EEEF21D3192 /* Pods-KavakTest.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KavakTest.release.xcconfig"; path = "Target Support Files/Pods-KavakTest/Pods-KavakTest.release.xcconfig"; sourceTree = "<group>"; };
+		F287F255267EAEE7009D5DDA /* HomeCollectionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeCollectionCell.swift; sourceTree = "<group>"; };
+		F287F256267EAEE7009D5DDA /* HomeCollectionCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeCollectionCell.xib; sourceTree = "<group>"; };
+		F287F25E267EB151009D5DDA /* HomeFriendCollectionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeFriendCollectionCell.swift; sourceTree = "<group>"; };
+		F287F25F267EB151009D5DDA /* HomeFriendCollectionCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeFriendCollectionCell.xib; sourceTree = "<group>"; };
+		F287F264267EB743009D5DDA /* ImageLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageLoader.swift; sourceTree = "<group>"; };
+		F2D49516267E8A7300C72E65 /* KavakTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KavakTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F2D49519267E8A7300C72E65 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		F2D4951B267E8A7300C72E65 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		F2D49522267E8A7300C72E65 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F2D49525267E8A7300C72E65 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		F2D49527267E8A7300C72E65 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F2D49533267E8B4C00C72E65 /* HomePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePresenter.swift; sourceTree = "<group>"; };
+		F2D49534267E8B4C00C72E65 /* HomeRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeRouter.swift; sourceTree = "<group>"; };
+		F2D49535267E8B4C00C72E65 /* HomeInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeInteractor.swift; sourceTree = "<group>"; };
+		F2D49536267E8B4C00C72E65 /* HomeProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeProtocol.swift; sourceTree = "<group>"; };
+		F2D49540267E8BAA00C72E65 /* HomeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeVC.swift; sourceTree = "<group>"; };
+		F2D49541267E8BAA00C72E65 /* HomeVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeVC.xib; sourceTree = "<group>"; };
+		F2D62D6D267E910700FA2DAC /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		F2D62D71267E927400FA2DAC /* HomeEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeEntity.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F2D49513267E8A7300C72E65 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B66CA751A504FD594794B98A /* Pods_KavakTest.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2EDF4AB45EC781AEEE94FBFA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				2ADAB54CF7D9537A6E14421B /* Pods_KavakTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B81EE415CDB401679A5FFB86 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				4D23264BCFB1E78CF955E875 /* Pods-KavakTest.debug.xcconfig */,
+				E0308AB8CC662EEEF21D3192 /* Pods-KavakTest.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		F287F253267EAE1A009D5DDA /* cell */ = {
+			isa = PBXGroup;
+			children = (
+				F287F255267EAEE7009D5DDA /* HomeCollectionCell.swift */,
+				F287F256267EAEE7009D5DDA /* HomeCollectionCell.xib */,
+				F287F25E267EB151009D5DDA /* HomeFriendCollectionCell.swift */,
+				F287F25F267EB151009D5DDA /* HomeFriendCollectionCell.xib */,
+			);
+			path = cell;
+			sourceTree = "<group>";
+		};
+		F287F263267EB719009D5DDA /* Commons */ = {
+			isa = PBXGroup;
+			children = (
+				F287F264267EB743009D5DDA /* ImageLoader.swift */,
+			);
+			path = Commons;
+			sourceTree = "<group>";
+		};
+		F2D4950D267E8A7300C72E65 = {
+			isa = PBXGroup;
+			children = (
+				F2D49518267E8A7300C72E65 /* KavakTest */,
+				F2D49517267E8A7300C72E65 /* Products */,
+				B81EE415CDB401679A5FFB86 /* Pods */,
+				2EDF4AB45EC781AEEE94FBFA /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		F2D49517267E8A7300C72E65 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F2D49516267E8A7300C72E65 /* KavakTest.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F2D49518267E8A7300C72E65 /* KavakTest */ = {
+			isa = PBXGroup;
+			children = (
+				F2D49519267E8A7300C72E65 /* AppDelegate.swift */,
+				F2D4951B267E8A7300C72E65 /* SceneDelegate.swift */,
+				F287F263267EB719009D5DDA /* Commons */,
+				F2D62D6C267E90EC00FA2DAC /* Constants */,
+				F2D49530267E8B2200C72E65 /* Features */,
+				F2D49522267E8A7300C72E65 /* Assets.xcassets */,
+				F2D49524267E8A7300C72E65 /* LaunchScreen.storyboard */,
+				F2D49527267E8A7300C72E65 /* Info.plist */,
+			);
+			path = KavakTest;
+			sourceTree = "<group>";
+		};
+		F2D49530267E8B2200C72E65 /* Features */ = {
+			isa = PBXGroup;
+			children = (
+				F2D49531267E8B3100C72E65 /* Home */,
+			);
+			path = Features;
+			sourceTree = "<group>";
+		};
+		F2D49531267E8B3100C72E65 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				F2D62D70267E925E00FA2DAC /* Entity */,
+				F2D62D6F267E925200FA2DAC /* View */,
+				F2D49533267E8B4C00C72E65 /* HomePresenter.swift */,
+				F2D49534267E8B4C00C72E65 /* HomeRouter.swift */,
+				F2D49535267E8B4C00C72E65 /* HomeInteractor.swift */,
+				F2D49536267E8B4C00C72E65 /* HomeProtocol.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		F2D62D6C267E90EC00FA2DAC /* Constants */ = {
+			isa = PBXGroup;
+			children = (
+				F2D62D6D267E910700FA2DAC /* Constants.swift */,
+			);
+			path = Constants;
+			sourceTree = "<group>";
+		};
+		F2D62D6F267E925200FA2DAC /* View */ = {
+			isa = PBXGroup;
+			children = (
+				F287F253267EAE1A009D5DDA /* cell */,
+				F2D49540267E8BAA00C72E65 /* HomeVC.swift */,
+				F2D49541267E8BAA00C72E65 /* HomeVC.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		F2D62D70267E925E00FA2DAC /* Entity */ = {
+			isa = PBXGroup;
+			children = (
+				F2D62D71267E927400FA2DAC /* HomeEntity.swift */,
+			);
+			path = Entity;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F2D49515267E8A7300C72E65 /* KavakTest */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F2D4952A267E8A7300C72E65 /* Build configuration list for PBXNativeTarget "KavakTest" */;
+			buildPhases = (
+				E9A94D4576EE4757EF298447 /* [CP] Check Pods Manifest.lock */,
+				F2D49512267E8A7300C72E65 /* Sources */,
+				F2D49513267E8A7300C72E65 /* Frameworks */,
+				F2D49514267E8A7300C72E65 /* Resources */,
+				89BF309BF3607AAD0FBF3643 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = KavakTest;
+			productName = KavakTest;
+			productReference = F2D49516267E8A7300C72E65 /* KavakTest.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F2D4950E267E8A7300C72E65 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1210;
+				LastUpgradeCheck = 1210;
+				TargetAttributes = {
+					F2D49515267E8A7300C72E65 = {
+						CreatedOnToolsVersion = 12.1;
+					};
+				};
+			};
+			buildConfigurationList = F2D49511267E8A7300C72E65 /* Build configuration list for PBXProject "KavakTest" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = F2D4950D267E8A7300C72E65;
+			productRefGroup = F2D49517267E8A7300C72E65 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F2D49515267E8A7300C72E65 /* KavakTest */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F2D49514267E8A7300C72E65 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F287F258267EAEE7009D5DDA /* HomeCollectionCell.xib in Resources */,
+				F2D49526267E8A7300C72E65 /* LaunchScreen.storyboard in Resources */,
+				F2D49543267E8BAB00C72E65 /* HomeVC.xib in Resources */,
+				F2D49523267E8A7300C72E65 /* Assets.xcassets in Resources */,
+				F287F261267EB151009D5DDA /* HomeFriendCollectionCell.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		89BF309BF3607AAD0FBF3643 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-KavakTest/Pods-KavakTest-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-KavakTest/Pods-KavakTest-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-KavakTest/Pods-KavakTest-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E9A94D4576EE4757EF298447 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-KavakTest-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F2D49512267E8A7300C72E65 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F287F257267EAEE7009D5DDA /* HomeCollectionCell.swift in Sources */,
+				F2D49539267E8B4C00C72E65 /* HomePresenter.swift in Sources */,
+				F287F265267EB743009D5DDA /* ImageLoader.swift in Sources */,
+				F2D49542267E8BAA00C72E65 /* HomeVC.swift in Sources */,
+				F2D4953A267E8B4C00C72E65 /* HomeRouter.swift in Sources */,
+				F2D4951A267E8A7300C72E65 /* AppDelegate.swift in Sources */,
+				F287F260267EB151009D5DDA /* HomeFriendCollectionCell.swift in Sources */,
+				F2D4953B267E8B4C00C72E65 /* HomeInteractor.swift in Sources */,
+				F2D4953C267E8B4C00C72E65 /* HomeProtocol.swift in Sources */,
+				F2D4951C267E8A7300C72E65 /* SceneDelegate.swift in Sources */,
+				F2D62D72267E927400FA2DAC /* HomeEntity.swift in Sources */,
+				F2D62D6E267E910700FA2DAC /* Constants.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		F2D49524267E8A7300C72E65 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F2D49525267E8A7300C72E65 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		F2D49528267E8A7300C72E65 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		F2D49529267E8A7300C72E65 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		F2D4952B267E8A7300C72E65 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4D23264BCFB1E78CF955E875 /* Pods-KavakTest.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = MC2W678MVZ;
+				INFOPLIST_FILE = KavakTest/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.nut.KavakTest;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		F2D4952C267E8A7300C72E65 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E0308AB8CC662EEEF21D3192 /* Pods-KavakTest.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = MC2W678MVZ;
+				INFOPLIST_FILE = KavakTest/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.nut.KavakTest;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F2D49511267E8A7300C72E65 /* Build configuration list for PBXProject "KavakTest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F2D49528267E8A7300C72E65 /* Debug */,
+				F2D49529267E8A7300C72E65 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F2D4952A267E8A7300C72E65 /* Build configuration list for PBXNativeTarget "KavakTest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F2D4952B267E8A7300C72E65 /* Debug */,
+				F2D4952C267E8A7300C72E65 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = F2D4950E267E8A7300C72E65 /* Project object */;
+}
