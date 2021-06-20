@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		B66CA751A504FD594794B98A /* Pods_KavakTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2ADAB54CF7D9537A6E14421B /* Pods_KavakTest.framework */; };
+		F23DB063267FB51A00EB719F /* HeaderCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F23DB061267FB51A00EB719F /* HeaderCollectionView.swift */; };
+		F23DB064267FB51A00EB719F /* HeaderCollectionView.xib in Resources */ = {isa = PBXBuildFile; fileRef = F23DB062267FB51A00EB719F /* HeaderCollectionView.xib */; };
 		F287F257267EAEE7009D5DDA /* HomeCollectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F287F255267EAEE7009D5DDA /* HomeCollectionCell.swift */; };
 		F287F258267EAEE7009D5DDA /* HomeCollectionCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F287F256267EAEE7009D5DDA /* HomeCollectionCell.xib */; };
 		F287F260267EB151009D5DDA /* HomeFriendCollectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F287F25E267EB151009D5DDA /* HomeFriendCollectionCell.swift */; };
@@ -42,6 +44,8 @@
 		2ADAB54CF7D9537A6E14421B /* Pods_KavakTest.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_KavakTest.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		4D23264BCFB1E78CF955E875 /* Pods-KavakTest.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KavakTest.debug.xcconfig"; path = "Target Support Files/Pods-KavakTest/Pods-KavakTest.debug.xcconfig"; sourceTree = "<group>"; };
 		E0308AB8CC662EEEF21D3192 /* Pods-KavakTest.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KavakTest.release.xcconfig"; path = "Target Support Files/Pods-KavakTest/Pods-KavakTest.release.xcconfig"; sourceTree = "<group>"; };
+		F23DB061267FB51A00EB719F /* HeaderCollectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderCollectionView.swift; sourceTree = "<group>"; };
+		F23DB062267FB51A00EB719F /* HeaderCollectionView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HeaderCollectionView.xib; sourceTree = "<group>"; };
 		F287F255267EAEE7009D5DDA /* HomeCollectionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeCollectionCell.swift; sourceTree = "<group>"; };
 		F287F256267EAEE7009D5DDA /* HomeCollectionCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeCollectionCell.xib; sourceTree = "<group>"; };
 		F287F25E267EB151009D5DDA /* HomeFriendCollectionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeFriendCollectionCell.swift; sourceTree = "<group>"; };
@@ -265,6 +269,8 @@
 			children = (
 				F2F73060267F9F6900B4EBE0 /* InformationCell.swift */,
 				F2F73061267F9F6900B4EBE0 /* InformationCell.xib */,
+				F23DB061267FB51A00EB719F /* HeaderCollectionView.swift */,
+				F23DB062267FB51A00EB719F /* HeaderCollectionView.xib */,
 			);
 			path = cell;
 			sourceTree = "<group>";
@@ -329,6 +335,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F2F73063267F9F6900B4EBE0 /* InformationCell.xib in Resources */,
+				F23DB064267FB51A00EB719F /* HeaderCollectionView.xib in Resources */,
 				F287F258267EAEE7009D5DDA /* HomeCollectionCell.xib in Resources */,
 				F2D49526267E8A7300C72E65 /* LaunchScreen.storyboard in Resources */,
 				F2D49543267E8BAB00C72E65 /* HomeVC.xib in Resources */,
@@ -402,6 +409,7 @@
 				F287F29B267EE394009D5DDA /* HomeDetailVC.swift in Sources */,
 				F2D4953C267E8B4C00C72E65 /* HomeProtocol.swift in Sources */,
 				F287F291267EE361009D5DDA /* HomeDetailPresenter.swift in Sources */,
+				F23DB063267FB51A00EB719F /* HeaderCollectionView.swift in Sources */,
 				F287F27B267ED239009D5DDA /* UIColor.swift in Sources */,
 				F287F293267EE361009D5DDA /* HomeDetailInteractor.swift in Sources */,
 				F2D4951C267E8A7300C72E65 /* SceneDelegate.swift in Sources */,

@@ -11,6 +11,7 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="HomeDetailVC" customModule="KavakTest" customModuleProvider="target">
             <connections>
                 <outlet property="ageLabel" destination="OpW-vU-fvq" id="R0R-aA-iOc"/>
+                <outlet property="collectionView" destination="js0-Jz-8J2" id="j8V-eu-BbL"/>
                 <outlet property="imageView" destination="FiD-Tf-ZIi" id="Ua2-tq-XRl"/>
                 <outlet property="nameLabel" destination="rT6-d8-oPY" id="t3X-zO-dpY"/>
                 <outlet property="tableView" destination="Ph0-y4-Gj5" id="3La-4N-RSz"/>
@@ -66,7 +67,7 @@
                     </constraints>
                     <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="7tM-qh-ucS">
                         <size key="itemSize" width="128" height="128"/>
-                        <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                        <size key="headerReferenceSize" width="50" height="50"/>
                         <size key="footerReferenceSize" width="0.0" height="0.0"/>
                         <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                     </collectionViewFlowLayout>
