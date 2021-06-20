@@ -14,9 +14,9 @@ struct InformationData {
     var data: citizensBrastlewark
     func generateDataSource() -> [InformationDataCell] {
         var array: [InformationDataCell] = [InformationDataCell]()
-        array.append(InformationDataCell(title: "Color de pelo", description: data.hair_color))
-        array.append(InformationDataCell(title: "Peso", description: String(data.weight)))
-        array.append(InformationDataCell(title: "Altura", description: String(data.height)))
+        array.append(InformationDataCell(title: "Color de Pelo:", description: data.hair_color))
+        array.append(InformationDataCell(title: "Peso:", description: String(data.weight)))
+        array.append(InformationDataCell(title: "Altura:", description: String(data.height)))
         return array
     }
 }
