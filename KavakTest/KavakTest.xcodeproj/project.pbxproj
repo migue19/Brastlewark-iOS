@@ -33,6 +33,9 @@
 		F2D49543267E8BAB00C72E65 /* HomeVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = F2D49541267E8BAA00C72E65 /* HomeVC.xib */; };
 		F2D62D6E267E910700FA2DAC /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2D62D6D267E910700FA2DAC /* Constants.swift */; };
 		F2D62D72267E927400FA2DAC /* HomeEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2D62D71267E927400FA2DAC /* HomeEntity.swift */; };
+		F2F7305C267F9BE000B4EBE0 /* HomeDetailEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2F7305B267F9BE000B4EBE0 /* HomeDetailEntity.swift */; };
+		F2F73062267F9F6900B4EBE0 /* InformationCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2F73060267F9F6900B4EBE0 /* InformationCell.swift */; };
+		F2F73063267F9F6900B4EBE0 /* InformationCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F2F73061267F9F6900B4EBE0 /* InformationCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -66,6 +69,9 @@
 		F2D49541267E8BAA00C72E65 /* HomeVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeVC.xib; sourceTree = "<group>"; };
 		F2D62D6D267E910700FA2DAC /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		F2D62D71267E927400FA2DAC /* HomeEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeEntity.swift; sourceTree = "<group>"; };
+		F2F7305B267F9BE000B4EBE0 /* HomeDetailEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeDetailEntity.swift; sourceTree = "<group>"; };
+		F2F73060267F9F6900B4EBE0 /* InformationCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InformationCell.swift; sourceTree = "<group>"; };
+		F2F73061267F9F6900B4EBE0 /* InformationCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = InformationCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -153,12 +159,12 @@
 		F287F289267EE344009D5DDA /* HomeDetail */ = {
 			isa = PBXGroup;
 			children = (
+				F2F7305E267F9EE100B4EBE0 /* View */,
 				F287F28B267EE361009D5DDA /* HomeDetailPresenter.swift */,
 				F287F28C267EE361009D5DDA /* HomeDetailRouter.swift */,
 				F287F28D267EE361009D5DDA /* HomeDetailInteractor.swift */,
 				F287F28E267EE361009D5DDA /* HomeDetailProtocol.swift */,
-				F287F299267EE394009D5DDA /* HomeDetailVC.swift */,
-				F287F29A267EE394009D5DDA /* HomeDetailVC.xib */,
+				F2F7305B267F9BE000B4EBE0 /* HomeDetailEntity.swift */,
 			);
 			path = HomeDetail;
 			sourceTree = "<group>";
@@ -244,6 +250,25 @@
 			path = Entity;
 			sourceTree = "<group>";
 		};
+		F2F7305E267F9EE100B4EBE0 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				F2F7305F267F9EFB00B4EBE0 /* cell */,
+				F287F29A267EE394009D5DDA /* HomeDetailVC.xib */,
+				F287F299267EE394009D5DDA /* HomeDetailVC.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		F2F7305F267F9EFB00B4EBE0 /* cell */ = {
+			isa = PBXGroup;
+			children = (
+				F2F73060267F9F6900B4EBE0 /* InformationCell.swift */,
+				F2F73061267F9F6900B4EBE0 /* InformationCell.xib */,
+			);
+			path = cell;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -303,6 +328,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F2F73063267F9F6900B4EBE0 /* InformationCell.xib in Resources */,
 				F287F258267EAEE7009D5DDA /* HomeCollectionCell.xib in Resources */,
 				F2D49526267E8A7300C72E65 /* LaunchScreen.storyboard in Resources */,
 				F2D49543267E8BAB00C72E65 /* HomeVC.xib in Resources */,
@@ -363,12 +389,14 @@
 			files = (
 				F287F27E267ED5E9009D5DDA /* UIVIew.swift in Sources */,
 				F287F294267EE361009D5DDA /* HomeDetailProtocol.swift in Sources */,
+				F2F7305C267F9BE000B4EBE0 /* HomeDetailEntity.swift in Sources */,
 				F287F257267EAEE7009D5DDA /* HomeCollectionCell.swift in Sources */,
 				F2D49539267E8B4C00C72E65 /* HomePresenter.swift in Sources */,
 				F287F265267EB743009D5DDA /* ImageLoader.swift in Sources */,
 				F2D49542267E8BAA00C72E65 /* HomeVC.swift in Sources */,
 				F2D4953A267E8B4C00C72E65 /* HomeRouter.swift in Sources */,
 				F2D4951A267E8A7300C72E65 /* AppDelegate.swift in Sources */,
+				F2F73062267F9F6900B4EBE0 /* InformationCell.swift in Sources */,
 				F287F260267EB151009D5DDA /* HomeFriendCollectionCell.swift in Sources */,
 				F2D4953B267E8B4C00C72E65 /* HomeInteractor.swift in Sources */,
 				F287F29B267EE394009D5DDA /* HomeDetailVC.swift in Sources */,
