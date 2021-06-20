@@ -16,8 +16,8 @@
                 <rect key="frame" x="0.0" y="0.0" width="126" height="35"/>
                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                 <subviews>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="hBX-cV-5aE">
-                        <rect key="frame" x="4" y="0.0" width="118" height="35"/>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="hBX-cV-5aE">
+                        <rect key="frame" x="8" y="0.0" width="110" height="35"/>
                         <fontDescription key="fontDescription" type="system" pointSize="10"/>
                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <nil key="highlightedColor"/>
@@ -26,9 +26,9 @@
             </view>
             <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
             <constraints>
-                <constraint firstItem="hBX-cV-5aE" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="4" id="Cvd-f2-qw7"/>
+                <constraint firstItem="hBX-cV-5aE" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="8" id="Cvd-f2-qw7"/>
                 <constraint firstItem="hBX-cV-5aE" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="EXj-yU-OZ3"/>
-                <constraint firstAttribute="trailing" secondItem="hBX-cV-5aE" secondAttribute="trailing" constant="4" id="JlC-us-DC0"/>
+                <constraint firstAttribute="trailing" secondItem="hBX-cV-5aE" secondAttribute="trailing" constant="8" id="JlC-us-DC0"/>
                 <constraint firstAttribute="bottom" secondItem="hBX-cV-5aE" secondAttribute="bottom" id="RFn-0c-ySh"/>
             </constraints>
             <size key="customSize" width="126" height="35"/>

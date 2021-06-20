@@ -39,7 +39,7 @@ extension HomeCollectionCell: UICollectionViewDelegateFlowLayout {
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
         let totalespace: CGFloat = 8 * 3
         let width = bounds.width - totalespace
-        return CGSize(width: width/2-1, height: 30)
+        return CGSize(width: width/2-1, height: 28)
     }
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, insetForSectionAt section: Int) -> UIEdgeInsets {
         UIEdgeInsets(top: 0, left: 8, bottom: 0, right: 8)
