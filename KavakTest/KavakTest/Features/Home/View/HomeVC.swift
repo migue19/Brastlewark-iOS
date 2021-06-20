@@ -8,6 +8,7 @@
 import UIKit
 
 class HomeVC: UIViewController {
+    @IBOutlet weak var searchBar: UISearchBar!
     var presenter: HomePresenterProtocol?
     var dataSource: [citizensBrastlewark] = [citizensBrastlewark]()
     var allData: [citizensBrastlewark] = [citizensBrastlewark]()
@@ -21,11 +22,10 @@ class HomeVC: UIViewController {
         presenter?.getInformation()
     }
     func setupCollectionView() {
-        let nib = UINib(nibName: "HomeCollectionCell", bundle: nil)
+        searchBar.delegate = self
         collectionView.dataSource = self
         collectionView.delegate = self
-        collectionView.register(nib, forCellWithReuseIdentifier: "HomeCollectionCell")
-        collectionView.register(UINib(nibName: "SearchCollectionReusableView", bundle: nil), forSupplementaryViewOfKind: UICollectionView.elementKindSectionHeader, withReuseIdentifier: "SearchCollectionReusableView")
+        collectionView.register(UINib(nibName: "HomeCollectionCell", bundle: nil), forCellWithReuseIdentifier: "HomeCollectionCell")
         getData()
     }
     override func traitCollectionDidChange(_ previousTraitCollection: UITraitCollection?) {
@@ -47,7 +47,6 @@ extension HomeVC: UICollectionViewDelegate, UICollectionViewDataSource {
         guard let header = collectionView.dequeueReusableSupplementaryView(ofKind: UICollectionView.elementKindSectionHeader, withReuseIdentifier: "SearchCollectionReusableView", for: indexPath) as? SearchCollectionReusableView else {
             return UICollectionReusableView()
         }
-        header.searchBar.delegate = self
         return header
     }
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
@@ -65,6 +64,7 @@ extension HomeVC: UICollectionViewDelegate, UICollectionViewDataSource {
 extension HomeVC: UISearchBarDelegate {
     func searchBarSearchButtonClicked(_ searchBar: UISearchBar) {
         guard let text = searchBar.text, !text.isEmpty else {
+            searchBar.endEditing(true)
             return
         }
         searchBar.endEditing(true)
@@ -75,6 +75,7 @@ extension HomeVC: UISearchBarDelegate {
         } else {
             dataSource = dataSource.filter({ $0.name.contains(searchText)})
         }
+        collectionView.reloadData()
     }
     func searchBarTextDidEndEditing(_ searchBar: UISearchBar) {
         collectionView.reloadData()
