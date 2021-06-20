@@ -14,10 +14,12 @@ class HomePresenter {
     var router: HomeRouterProtocol?
 }
 extension HomePresenter: HomePresenterProtocol {
+    func pressDetail(data: citizensBrastlewark) {
+        router?.showDetail(data: data)
+    }
     func getInformation() {
         interactor?.getBrastlewark()
     }
-    
 }
 extension HomePresenter: HomeInteractorOutputProtocol {
     func sendData(data: [citizensBrastlewark]) {

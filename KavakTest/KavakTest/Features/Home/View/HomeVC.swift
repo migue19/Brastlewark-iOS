@@ -49,6 +49,9 @@ extension HomeVC: UICollectionViewDelegate, UICollectionViewDataSource {
         cell.setupCell(data: dataSource[indexPath.row])
         return cell
     }
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        presenter?.pressDetail(data: dataSource[indexPath.row])
+    }
 }
 /// Protocolo para recibir datos de presenter.
 extension HomeVC: HomeViewProtocol {

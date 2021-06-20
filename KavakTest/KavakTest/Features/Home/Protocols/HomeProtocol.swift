@@ -16,11 +16,13 @@ protocol HomeViewProtocol {
 /// Protocolo que define los métodos y atributos para el routing de Home
 protocol HomeRouterProtocol {
     // PRESENTER -> ROUTING
+    func showDetail(data: citizensBrastlewark)
 }
 /// Protocolo que define los métodos y atributos para el Presenter de Home
 protocol HomePresenterProtocol {
     // VIEW -> PRESENTER
     func getInformation()
+    func pressDetail(data: citizensBrastlewark)
 }
 /// Protocolo que define los métodos y atributos para el Interactor de Home
 protocol HomeInteractorInputProtocol {

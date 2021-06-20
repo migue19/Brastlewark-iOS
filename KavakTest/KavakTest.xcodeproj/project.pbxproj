@@ -15,6 +15,12 @@
 		F287F265267EB743009D5DDA /* ImageLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = F287F264267EB743009D5DDA /* ImageLoader.swift */; };
 		F287F27B267ED239009D5DDA /* UIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = F287F27A267ED239009D5DDA /* UIColor.swift */; };
 		F287F27E267ED5E9009D5DDA /* UIVIew.swift in Sources */ = {isa = PBXBuildFile; fileRef = F287F27D267ED5E9009D5DDA /* UIVIew.swift */; };
+		F287F291267EE361009D5DDA /* HomeDetailPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = F287F28B267EE361009D5DDA /* HomeDetailPresenter.swift */; };
+		F287F292267EE361009D5DDA /* HomeDetailRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = F287F28C267EE361009D5DDA /* HomeDetailRouter.swift */; };
+		F287F293267EE361009D5DDA /* HomeDetailInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = F287F28D267EE361009D5DDA /* HomeDetailInteractor.swift */; };
+		F287F294267EE361009D5DDA /* HomeDetailProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = F287F28E267EE361009D5DDA /* HomeDetailProtocol.swift */; };
+		F287F29B267EE394009D5DDA /* HomeDetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F287F299267EE394009D5DDA /* HomeDetailVC.swift */; };
+		F287F29C267EE394009D5DDA /* HomeDetailVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = F287F29A267EE394009D5DDA /* HomeDetailVC.xib */; };
 		F2D4951A267E8A7300C72E65 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2D49519267E8A7300C72E65 /* AppDelegate.swift */; };
 		F2D4951C267E8A7300C72E65 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2D4951B267E8A7300C72E65 /* SceneDelegate.swift */; };
 		F2D49523267E8A7300C72E65 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F2D49522267E8A7300C72E65 /* Assets.xcassets */; };
@@ -40,6 +46,12 @@
 		F287F264267EB743009D5DDA /* ImageLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageLoader.swift; sourceTree = "<group>"; };
 		F287F27A267ED239009D5DDA /* UIColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColor.swift; sourceTree = "<group>"; };
 		F287F27D267ED5E9009D5DDA /* UIVIew.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIVIew.swift; sourceTree = "<group>"; };
+		F287F28B267EE361009D5DDA /* HomeDetailPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeDetailPresenter.swift; sourceTree = "<group>"; };
+		F287F28C267EE361009D5DDA /* HomeDetailRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeDetailRouter.swift; sourceTree = "<group>"; };
+		F287F28D267EE361009D5DDA /* HomeDetailInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeDetailInteractor.swift; sourceTree = "<group>"; };
+		F287F28E267EE361009D5DDA /* HomeDetailProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeDetailProtocol.swift; sourceTree = "<group>"; };
+		F287F299267EE394009D5DDA /* HomeDetailVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeDetailVC.swift; sourceTree = "<group>"; };
+		F287F29A267EE394009D5DDA /* HomeDetailVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeDetailVC.xib; sourceTree = "<group>"; };
 		F2D49516267E8A7300C72E65 /* KavakTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KavakTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F2D49519267E8A7300C72E65 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F2D4951B267E8A7300C72E65 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -138,6 +150,19 @@
 			path = Interactor;
 			sourceTree = "<group>";
 		};
+		F287F289267EE344009D5DDA /* HomeDetail */ = {
+			isa = PBXGroup;
+			children = (
+				F287F28B267EE361009D5DDA /* HomeDetailPresenter.swift */,
+				F287F28C267EE361009D5DDA /* HomeDetailRouter.swift */,
+				F287F28D267EE361009D5DDA /* HomeDetailInteractor.swift */,
+				F287F28E267EE361009D5DDA /* HomeDetailProtocol.swift */,
+				F287F299267EE394009D5DDA /* HomeDetailVC.swift */,
+				F287F29A267EE394009D5DDA /* HomeDetailVC.xib */,
+			);
+			path = HomeDetail;
+			sourceTree = "<group>";
+		};
 		F2D4950D267E8A7300C72E65 = {
 			isa = PBXGroup;
 			children = (
@@ -174,6 +199,7 @@
 		F2D49530267E8B2200C72E65 /* Features */ = {
 			isa = PBXGroup;
 			children = (
+				F287F289267EE344009D5DDA /* HomeDetail */,
 				F2D49531267E8B3100C72E65 /* Home */,
 			);
 			path = Features;
@@ -281,6 +307,7 @@
 				F2D49526267E8A7300C72E65 /* LaunchScreen.storyboard in Resources */,
 				F2D49543267E8BAB00C72E65 /* HomeVC.xib in Resources */,
 				F2D49523267E8A7300C72E65 /* Assets.xcassets in Resources */,
+				F287F29C267EE394009D5DDA /* HomeDetailVC.xib in Resources */,
 				F287F261267EB151009D5DDA /* HomeFriendCollectionCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -335,6 +362,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F287F27E267ED5E9009D5DDA /* UIVIew.swift in Sources */,
+				F287F294267EE361009D5DDA /* HomeDetailProtocol.swift in Sources */,
 				F287F257267EAEE7009D5DDA /* HomeCollectionCell.swift in Sources */,
 				F2D49539267E8B4C00C72E65 /* HomePresenter.swift in Sources */,
 				F287F265267EB743009D5DDA /* ImageLoader.swift in Sources */,
@@ -343,10 +371,14 @@
 				F2D4951A267E8A7300C72E65 /* AppDelegate.swift in Sources */,
 				F287F260267EB151009D5DDA /* HomeFriendCollectionCell.swift in Sources */,
 				F2D4953B267E8B4C00C72E65 /* HomeInteractor.swift in Sources */,
+				F287F29B267EE394009D5DDA /* HomeDetailVC.swift in Sources */,
 				F2D4953C267E8B4C00C72E65 /* HomeProtocol.swift in Sources */,
+				F287F291267EE361009D5DDA /* HomeDetailPresenter.swift in Sources */,
 				F287F27B267ED239009D5DDA /* UIColor.swift in Sources */,
+				F287F293267EE361009D5DDA /* HomeDetailInteractor.swift in Sources */,
 				F2D4951C267E8A7300C72E65 /* SceneDelegate.swift in Sources */,
 				F2D62D72267E927400FA2DAC /* HomeEntity.swift in Sources */,
+				F287F292267EE361009D5DDA /* HomeDetailRouter.swift in Sources */,
 				F2D62D6E267E910700FA2DAC /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

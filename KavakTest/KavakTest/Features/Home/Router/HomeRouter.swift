@@ -25,5 +25,9 @@ class HomeRouter {
     }
 }
 extension HomeRouter: HomeRouterProtocol {
+    func showDetail(data: citizensBrastlewark) {
+        let detail = HomeDetailRouter(data: data)
+        view.present(detail.view, animated: true, completion: nil)
+    }
 }
 
