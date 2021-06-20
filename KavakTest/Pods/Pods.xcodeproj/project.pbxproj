@@ -3,53 +3,77 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
-		008B09F666EAC3FEFAC04E4627A52D5C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
-		16864BCC91A23C31FCB2D1DFD102A0B6 /* ConnectionLayer-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E8D77435025BC10713D9035A2F34F3B /* ConnectionLayer-dummy.m */; };
-		546763D61B190256616431746941FE9F /* Pods-KavakTest-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 4B94350B70677B0C6D56FBF4083A070E /* Pods-KavakTest-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		89DF5C1F03496CF0E330259B850212D0 /* Pods-KavakTest-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 2063531D91033A09BF5456043BE5F880 /* Pods-KavakTest-dummy.m */; };
-		B005FBD1851C0B02BB06D5583CC9C131 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
-		DF096F28FF72F043C96191494601E26B /* ConnectionLayer-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 0D0E6D75C79E6B8DE7E79E0EC826C204 /* ConnectionLayer-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		F007B8C774F44510952101093F76EBB7 /* ConnectionLayerEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF2C259D1B00E2E12D9BC52E20F6B38E /* ConnectionLayerEntity.swift */; };
-		F5B9A9BFD7FA3EAB33226AB04922322F /* ConnectionLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1ABEFBF167B3B0CBFBA79DFD447B5143 /* ConnectionLayer.swift */; };
+		008B09F666EAC3FEFAC04E4627A52D5C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EAB6F611E86A4758835A715E4B4184F6 /* Foundation.framework */; };
+		103F015B6C04E632F856557E662452F9 /* Pods-KavakTest-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 4B94350B70677B0C6D56FBF4083A070E /* Pods-KavakTest-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		16864BCC91A23C31FCB2D1DFD102A0B6 /* ConnectionLayer-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = ECC86B56AD186DF10EEFC553703983BF /* ConnectionLayer-dummy.m */; };
+		31ECB1D9179004359D76A06BFA1C6125 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D245E0514AAC1A2B9A6D5EA2F383E90F /* UIKit.framework */; };
+		5020B10DA7A2AD839FD6976D7881EDFE /* Pods-KavakTest-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 2063531D91033A09BF5456043BE5F880 /* Pods-KavakTest-dummy.m */; };
+		714D279F82E104DD99F70C71B8F29CC1 /* NUTComponents-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = FA8EAAD7BF96DF051AD356655D49844C /* NUTComponents-dummy.m */; };
+		81B58C53E11E1DE0AE390E4AC61790B5 /* NUTComponents-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 62777011669C071DAA02FAE7042DDA42 /* NUTComponents-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		842A8A936CE990B4BA6F59C10D312E69 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EAB6F611E86A4758835A715E4B4184F6 /* Foundation.framework */; };
+		97060E6DEC9DE30B9056F6E28C4963EB /* NUTButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 973FA6A219DD6FAC6E9120B147823C35 /* NUTButton.swift */; };
+		A80DA309AE13FB704E5C7D6681A03CE0 /* NUTKeyboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C6B6DE6ECB5E1E91645326BE81CA4EC /* NUTKeyboard.swift */; };
+		DF096F28FF72F043C96191494601E26B /* ConnectionLayer-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 47678372631C0DF0352A7130E66EFC7E /* ConnectionLayer-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F007B8C774F44510952101093F76EBB7 /* ConnectionLayerEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78B1F75C6CE3818F98538C528AB8F494 /* ConnectionLayerEntity.swift */; };
+		F5B9A9BFD7FA3EAB33226AB04922322F /* ConnectionLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = A213CD2618EFDC6243FD4BC81FB7C520 /* ConnectionLayer.swift */; };
+		FD2DB12A8C69AF2CA240FD3CDAF1F5F2 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EAB6F611E86A4758835A715E4B4184F6 /* Foundation.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		9677E0A371D5378C5E7A8AD49D9025F6 /* PBXContainerItemProxy */ = {
+		34A34E6CFE6911F80842FE5148A16931 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = AFF18469A632EF67970A880CEA22A456;
 			remoteInfo = ConnectionLayer;
 		};
+		49BA660FD5863D812CA3E1040CA39E24 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9F1CFB24251C6CA9CDAC518698DE5C34;
+			remoteInfo = NUTComponents;
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		01A38786B89BE80DFB37FD18C724491E /* Pods-KavakTest.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-KavakTest.modulemap"; sourceTree = "<group>"; };
-		0D0E6D75C79E6B8DE7E79E0EC826C204 /* ConnectionLayer-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ConnectionLayer-umbrella.h"; sourceTree = "<group>"; };
-		1ABEFBF167B3B0CBFBA79DFD447B5143 /* ConnectionLayer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConnectionLayer.swift; path = ConnectionLayer/ConnectionLayer.swift; sourceTree = "<group>"; };
+		14F947C9B09A0A9849185ACF72A26A46 /* NUTComponents.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = NUTComponents.debug.xcconfig; sourceTree = "<group>"; };
+		177FDB13D334044C75CEF57459DD0F14 /* NUTComponents-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "NUTComponents-prefix.pch"; sourceTree = "<group>"; };
 		2063531D91033A09BF5456043BE5F880 /* Pods-KavakTest-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-KavakTest-dummy.m"; sourceTree = "<group>"; };
 		3EFB2AEC52DE8084F46C944F4AEE7E4E /* Pods-KavakTest-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-KavakTest-acknowledgements.plist"; sourceTree = "<group>"; };
+		4226DC6E737A91398828D0C0298656FC /* ConnectionLayer.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = ConnectionLayer.debug.xcconfig; sourceTree = "<group>"; };
 		43B88E22BBAE4A561EA7FCB1EF17C7C7 /* Pods-KavakTest.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-KavakTest.debug.xcconfig"; sourceTree = "<group>"; };
+		47678372631C0DF0352A7130E66EFC7E /* ConnectionLayer-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ConnectionLayer-umbrella.h"; sourceTree = "<group>"; };
 		4B94350B70677B0C6D56FBF4083A070E /* Pods-KavakTest-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-KavakTest-umbrella.h"; sourceTree = "<group>"; };
-		6D8F86C6FFFBDB4C3CEC0D6A140C615D /* ConnectionLayer-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ConnectionLayer-prefix.pch"; sourceTree = "<group>"; };
-		6E8D77435025BC10713D9035A2F34F3B /* ConnectionLayer-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "ConnectionLayer-dummy.m"; sourceTree = "<group>"; };
-		73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		5C6B6DE6ECB5E1E91645326BE81CA4EC /* NUTKeyboard.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NUTKeyboard.swift; path = Classes/NUTKeyboard.swift; sourceTree = "<group>"; };
+		62777011669C071DAA02FAE7042DDA42 /* NUTComponents-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "NUTComponents-umbrella.h"; sourceTree = "<group>"; };
 		758ED83C9D87C3466772F24B38C79468 /* Pods_KavakTest.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_KavakTest.framework; path = "Pods-KavakTest.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
-		7792A81A983DA02235E8311EE5F23037 /* ConnectionLayer.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = ConnectionLayer.debug.xcconfig; sourceTree = "<group>"; };
-		78D80268C7EC3315576B4FFF6E16A98F /* ConnectionLayer-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "ConnectionLayer-Info.plist"; sourceTree = "<group>"; };
+		78B1F75C6CE3818F98538C528AB8F494 /* ConnectionLayerEntity.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConnectionLayerEntity.swift; path = ConnectionLayer/ConnectionLayerEntity.swift; sourceTree = "<group>"; };
+		7B5999A4B27DC86942D4C4A60F178F13 /* ConnectionLayer-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "ConnectionLayer-Info.plist"; sourceTree = "<group>"; };
+		80AF7B6AC0856F0EBBB3AD71DB9F6200 /* NUTComponents.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = NUTComponents.release.xcconfig; sourceTree = "<group>"; };
 		94B48DE215E2EB626B2CEFE010FB1E79 /* ConnectionLayer.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = ConnectionLayer.framework; path = ConnectionLayer.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		95370AA458D47D65D8337D3981210C39 /* Pods-KavakTest.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-KavakTest.release.xcconfig"; sourceTree = "<group>"; };
+		973FA6A219DD6FAC6E9120B147823C35 /* NUTButton.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NUTButton.swift; path = Classes/NUTButton.swift; sourceTree = "<group>"; };
 		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		A213CD2618EFDC6243FD4BC81FB7C520 /* ConnectionLayer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConnectionLayer.swift; path = ConnectionLayer/ConnectionLayer.swift; sourceTree = "<group>"; };
+		B08D957413A5524E6A808A81E28045A6 /* ConnectionLayer.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = ConnectionLayer.modulemap; sourceTree = "<group>"; };
 		B24EEAE3F9823896B52F3E0A22CD5439 /* Pods-KavakTest-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-KavakTest-frameworks.sh"; sourceTree = "<group>"; };
+		C2221A2CD3E8DE8EF3BB9968E1408216 /* NUTComponents.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = NUTComponents.framework; path = NUTComponents.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C3807FF8A0BD368D3FC20976C2873BCD /* Pods-KavakTest-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-KavakTest-acknowledgements.markdown"; sourceTree = "<group>"; };
-		C4DE51AE60B8D861552BE9B05D56EC5D /* ConnectionLayer.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = ConnectionLayer.release.xcconfig; sourceTree = "<group>"; };
-		C9B5B370D751B495094EE2AD19F2EE3D /* ConnectionLayer.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = ConnectionLayer.modulemap; sourceTree = "<group>"; };
-		CF2C259D1B00E2E12D9BC52E20F6B38E /* ConnectionLayerEntity.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConnectionLayerEntity.swift; path = ConnectionLayer/ConnectionLayerEntity.swift; sourceTree = "<group>"; };
+		CFFC55ED74FF8160EF095C0108DF2E99 /* NUTComponents.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = NUTComponents.modulemap; sourceTree = "<group>"; };
+		D245E0514AAC1A2B9A6D5EA2F383E90F /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
+		D70511540C6DE7EE19F32CDEEA6503ED /* NUTComponents-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "NUTComponents-Info.plist"; sourceTree = "<group>"; };
 		E71BAFBAD519F009CEA6CA2AC958BAE8 /* Pods-KavakTest-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-KavakTest-Info.plist"; sourceTree = "<group>"; };
+		EAB6F611E86A4758835A715E4B4184F6 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		ECC86B56AD186DF10EEFC553703983BF /* ConnectionLayer-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "ConnectionLayer-dummy.m"; sourceTree = "<group>"; };
+		EF19435B7E7A8A1671F12108E66C0123 /* ConnectionLayer.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = ConnectionLayer.release.xcconfig; sourceTree = "<group>"; };
+		F6C8DF39EB0C20BA21BF61E32BB5CE7B /* ConnectionLayer-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ConnectionLayer-prefix.pch"; sourceTree = "<group>"; };
+		FA8EAAD7BF96DF051AD356655D49844C /* NUTComponents-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "NUTComponents-dummy.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,39 +85,64 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		5EC12B9A09EA9947AFD81006DC8B5000 /* Frameworks */ = {
+		4B05F64D29A2F07DB49DA3BD4008D274 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B005FBD1851C0B02BB06D5583CC9C131 /* Foundation.framework in Frameworks */,
+				FD2DB12A8C69AF2CA240FD3CDAF1F5F2 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F4A0F6CFFD11CCD695AAE9D80DFDE5A4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				842A8A936CE990B4BA6F59C10D312E69 /* Foundation.framework in Frameworks */,
+				31ECB1D9179004359D76A06BFA1C6125 /* UIKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		13C9FBC3D0D35BFBEE49231E14592FA2 /* Support Files */ = {
+		1628BF05B4CAFDCC3549A101F5A10A17 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				C9B5B370D751B495094EE2AD19F2EE3D /* ConnectionLayer.modulemap */,
-				6E8D77435025BC10713D9035A2F34F3B /* ConnectionLayer-dummy.m */,
-				78D80268C7EC3315576B4FFF6E16A98F /* ConnectionLayer-Info.plist */,
-				6D8F86C6FFFBDB4C3CEC0D6A140C615D /* ConnectionLayer-prefix.pch */,
-				0D0E6D75C79E6B8DE7E79E0EC826C204 /* ConnectionLayer-umbrella.h */,
-				7792A81A983DA02235E8311EE5F23037 /* ConnectionLayer.debug.xcconfig */,
-				C4DE51AE60B8D861552BE9B05D56EC5D /* ConnectionLayer.release.xcconfig */,
+				59DA5C1F72E1D5BABC43EACBA672C3BA /* iOS */,
 			);
-			name = "Support Files";
-			path = "../Target Support Files/ConnectionLayer";
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		3A90945C53ED0B8DBD8856F1B6AD02A8 /* Products */ = {
+		1F3B1B8EB040C1A7A5A4CE7EAB20716E /* Products */ = {
 			isa = PBXGroup;
 			children = (
 				94B48DE215E2EB626B2CEFE010FB1E79 /* ConnectionLayer.framework */,
+				C2221A2CD3E8DE8EF3BB9968E1408216 /* NUTComponents.framework */,
 				758ED83C9D87C3466772F24B38C79468 /* Pods_KavakTest.framework */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		1FF07F540E4E3C1A3D38C9F94C048B4C /* NUTComponents */ = {
+			isa = PBXGroup;
+			children = (
+				973FA6A219DD6FAC6E9120B147823C35 /* NUTButton.swift */,
+				5C6B6DE6ECB5E1E91645326BE81CA4EC /* NUTKeyboard.swift */,
+				D875A5ECBD22EE9BB12180AB0E159598 /* Support Files */,
+			);
+			name = NUTComponents;
+			path = NUTComponents;
+			sourceTree = "<group>";
+		};
+		30BF6AC443E694826F8B76B97581EEA5 /* ConnectionLayer */ = {
+			isa = PBXGroup;
+			children = (
+				A213CD2618EFDC6243FD4BC81FB7C520 /* ConnectionLayer.swift */,
+				78B1F75C6CE3818F98538C528AB8F494 /* ConnectionLayerEntity.swift */,
+				4DF7FEE63801F117E747590CF55A6DEE /* Support Files */,
+			);
+			name = ConnectionLayer;
+			path = ConnectionLayer;
 			sourceTree = "<group>";
 		};
 		47F67C79BEB83542BCB06A28560E9073 /* Pods-KavakTest */ = {
@@ -113,20 +162,28 @@
 			path = "Target Support Files/Pods-KavakTest";
 			sourceTree = "<group>";
 		};
-		578452D2E740E91742655AC8F1636D1F /* iOS */ = {
+		4DF7FEE63801F117E747590CF55A6DEE /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */,
+				B08D957413A5524E6A808A81E28045A6 /* ConnectionLayer.modulemap */,
+				ECC86B56AD186DF10EEFC553703983BF /* ConnectionLayer-dummy.m */,
+				7B5999A4B27DC86942D4C4A60F178F13 /* ConnectionLayer-Info.plist */,
+				F6C8DF39EB0C20BA21BF61E32BB5CE7B /* ConnectionLayer-prefix.pch */,
+				47678372631C0DF0352A7130E66EFC7E /* ConnectionLayer-umbrella.h */,
+				4226DC6E737A91398828D0C0298656FC /* ConnectionLayer.debug.xcconfig */,
+				EF19435B7E7A8A1671F12108E66C0123 /* ConnectionLayer.release.xcconfig */,
 			);
-			name = iOS;
+			name = "Support Files";
+			path = "../Target Support Files/ConnectionLayer";
 			sourceTree = "<group>";
 		};
-		5DDA570F0CC3C3A9BC0D68DDC0FF0E16 /* Pods */ = {
+		59DA5C1F72E1D5BABC43EACBA672C3BA /* iOS */ = {
 			isa = PBXGroup;
 			children = (
-				BE31804CD898ECAC30B735983CBF673F /* ConnectionLayer */,
+				EAB6F611E86A4758835A715E4B4184F6 /* Foundation.framework */,
+				D245E0514AAC1A2B9A6D5EA2F383E90F /* UIKit.framework */,
 			);
-			name = Pods;
+			name = iOS;
 			sourceTree = "<group>";
 		};
 		621FCEA5F671809C403EFBC64DC863FD /* Targets Support Files */ = {
@@ -137,34 +194,39 @@
 			name = "Targets Support Files";
 			sourceTree = "<group>";
 		};
-		BE31804CD898ECAC30B735983CBF673F /* ConnectionLayer */ = {
+		9D890EE09A2AF5B2613C82EA430F4011 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				1ABEFBF167B3B0CBFBA79DFD447B5143 /* ConnectionLayer.swift */,
-				CF2C259D1B00E2E12D9BC52E20F6B38E /* ConnectionLayerEntity.swift */,
-				13C9FBC3D0D35BFBEE49231E14592FA2 /* Support Files */,
+				30BF6AC443E694826F8B76B97581EEA5 /* ConnectionLayer */,
+				1FF07F540E4E3C1A3D38C9F94C048B4C /* NUTComponents */,
 			);
-			name = ConnectionLayer;
-			path = ConnectionLayer;
+			name = Pods;
 			sourceTree = "<group>";
 		};
 		CF1408CF629C7361332E53B88F7BD30C = {
 			isa = PBXGroup;
 			children = (
 				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
-				D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */,
-				5DDA570F0CC3C3A9BC0D68DDC0FF0E16 /* Pods */,
-				3A90945C53ED0B8DBD8856F1B6AD02A8 /* Products */,
+				1628BF05B4CAFDCC3549A101F5A10A17 /* Frameworks */,
+				9D890EE09A2AF5B2613C82EA430F4011 /* Pods */,
+				1F3B1B8EB040C1A7A5A4CE7EAB20716E /* Products */,
 				621FCEA5F671809C403EFBC64DC863FD /* Targets Support Files */,
 			);
 			sourceTree = "<group>";
 		};
-		D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */ = {
+		D875A5ECBD22EE9BB12180AB0E159598 /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				578452D2E740E91742655AC8F1636D1F /* iOS */,
+				CFFC55ED74FF8160EF095C0108DF2E99 /* NUTComponents.modulemap */,
+				FA8EAAD7BF96DF051AD356655D49844C /* NUTComponents-dummy.m */,
+				D70511540C6DE7EE19F32CDEEA6503ED /* NUTComponents-Info.plist */,
+				177FDB13D334044C75CEF57459DD0F14 /* NUTComponents-prefix.pch */,
+				62777011669C071DAA02FAE7042DDA42 /* NUTComponents-umbrella.h */,
+				14F947C9B09A0A9849185ACF72A26A46 /* NUTComponents.debug.xcconfig */,
+				80AF7B6AC0856F0EBBB3AD71DB9F6200 /* NUTComponents.release.xcconfig */,
 			);
-			name = Frameworks;
+			name = "Support Files";
+			path = "../Target Support Files/NUTComponents";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -178,11 +240,19 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		12B35746AAC633E948A05764FE806528 /* Headers */ = {
+		6C8382538CA74E4FE5B6FAAD374B567A /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				546763D61B190256616431746941FE9F /* Pods-KavakTest-umbrella.h in Headers */,
+				81B58C53E11E1DE0AE390E4AC61790B5 /* NUTComponents-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EE90662CAEAC06204800C35FD3A616D4 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				103F015B6C04E632F856557E662452F9 /* Pods-KavakTest-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -191,21 +261,40 @@
 /* Begin PBXNativeTarget section */
 		258DDE6C098272E43E20DBC17B4D844D /* Pods-KavakTest */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 37B981E16E877A6DD73102D31BB7D69C /* Build configuration list for PBXNativeTarget "Pods-KavakTest" */;
+			buildConfigurationList = F6FE8A5EA79106928DE3AD5201E838B2 /* Build configuration list for PBXNativeTarget "Pods-KavakTest" */;
 			buildPhases = (
-				12B35746AAC633E948A05764FE806528 /* Headers */,
-				8CA83CD8345E385B643BA46C40EDD23D /* Sources */,
-				5EC12B9A09EA9947AFD81006DC8B5000 /* Frameworks */,
-				05F3B088D44CE1CE419B6EC9A5F981F0 /* Resources */,
+				EE90662CAEAC06204800C35FD3A616D4 /* Headers */,
+				6DBB93F6F3D8005AE537FE2D76635DC9 /* Sources */,
+				4B05F64D29A2F07DB49DA3BD4008D274 /* Frameworks */,
+				6ED57F1F3FB50EB35ADB2C050E945C33 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				DEBA0AC187EEC8DC82BE38B8425F8F2F /* PBXTargetDependency */,
+				A1878645DA3A6A86B958A7A9A99336F2 /* PBXTargetDependency */,
+				BFF284572FA7C32CB6150106CAD91A56 /* PBXTargetDependency */,
 			);
 			name = "Pods-KavakTest";
 			productName = "Pods-KavakTest";
 			productReference = 758ED83C9D87C3466772F24B38C79468 /* Pods_KavakTest.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		9F1CFB24251C6CA9CDAC518698DE5C34 /* NUTComponents */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 85921EE905D5DA915E7D66F0B9AE6F69 /* Build configuration list for PBXNativeTarget "NUTComponents" */;
+			buildPhases = (
+				6C8382538CA74E4FE5B6FAAD374B567A /* Headers */,
+				8D911D2FD6210F2A0D9A5DE49DCB974B /* Sources */,
+				F4A0F6CFFD11CCD695AAE9D80DFDE5A4 /* Frameworks */,
+				D5492E960E31C8DF39364874B26E9190 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = NUTComponents;
+			productName = NUTComponents;
+			productReference = C2221A2CD3E8DE8EF3BB9968E1408216 /* NUTComponents.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		AFF18469A632EF67970A880CEA22A456 /* ConnectionLayer */ = {
@@ -236,7 +325,7 @@
 				LastUpgradeCheck = 1100;
 			};
 			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
-			compatibilityVersion = "Xcode 9.3";
+			compatibilityVersion = "Xcode 10.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -244,18 +333,19 @@
 				Base,
 			);
 			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
-			productRefGroup = 3A90945C53ED0B8DBD8856F1B6AD02A8 /* Products */;
+			productRefGroup = 1F3B1B8EB040C1A7A5A4CE7EAB20716E /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
 				AFF18469A632EF67970A880CEA22A456 /* ConnectionLayer */,
+				9F1CFB24251C6CA9CDAC518698DE5C34 /* NUTComponents */,
 				258DDE6C098272E43E20DBC17B4D844D /* Pods-KavakTest */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		05F3B088D44CE1CE419B6EC9A5F981F0 /* Resources */ = {
+		6ED57F1F3FB50EB35ADB2C050E945C33 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -263,6 +353,13 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		AC24E86A98466AB3DFAD959DB1B6F8D8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D5492E960E31C8DF39364874B26E9190 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -282,29 +379,45 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		8CA83CD8345E385B643BA46C40EDD23D /* Sources */ = {
+		6DBB93F6F3D8005AE537FE2D76635DC9 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				89DF5C1F03496CF0E330259B850212D0 /* Pods-KavakTest-dummy.m in Sources */,
+				5020B10DA7A2AD839FD6976D7881EDFE /* Pods-KavakTest-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8D911D2FD6210F2A0D9A5DE49DCB974B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				97060E6DEC9DE30B9056F6E28C4963EB /* NUTButton.swift in Sources */,
+				714D279F82E104DD99F70C71B8F29CC1 /* NUTComponents-dummy.m in Sources */,
+				A80DA309AE13FB704E5C7D6681A03CE0 /* NUTKeyboard.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		DEBA0AC187EEC8DC82BE38B8425F8F2F /* PBXTargetDependency */ = {
+		A1878645DA3A6A86B958A7A9A99336F2 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = ConnectionLayer;
 			target = AFF18469A632EF67970A880CEA22A456 /* ConnectionLayer */;
-			targetProxy = 9677E0A371D5378C5E7A8AD49D9025F6 /* PBXContainerItemProxy */;
+			targetProxy = 34A34E6CFE6911F80842FE5148A16931 /* PBXContainerItemProxy */;
+		};
+		BFF284572FA7C32CB6150106CAD91A56 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = NUTComponents;
+			target = 9F1CFB24251C6CA9CDAC518698DE5C34 /* NUTComponents */;
+			targetProxy = 49BA660FD5863D812CA3E1040CA39E24 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		341C60C133D6A8011C94009756AF4317 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 7792A81A983DA02235E8311EE5F23037 /* ConnectionLayer.debug.xcconfig */;
+			baseConfigurationReference = 4226DC6E737A91398828D0C0298656FC /* ConnectionLayer.debug.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_OBJC_WEAK = NO;
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -399,6 +512,117 @@
 			};
 			name = Release;
 		};
+		7B141C0EBF1E018831C75F4303FA77F2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 80AF7B6AC0856F0EBBB3AD71DB9F6200 /* NUTComponents.release.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/NUTComponents/NUTComponents-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/NUTComponents/NUTComponents-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/NUTComponents/NUTComponents.modulemap";
+				PRODUCT_MODULE_NAME = NUTComponents;
+				PRODUCT_NAME = NUTComponents;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		8D48D022182E61CCEA581CD703C64B3B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 43B88E22BBAE4A561EA7FCB1EF17C7C7 /* Pods-KavakTest.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-KavakTest/Pods-KavakTest-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-KavakTest/Pods-KavakTest.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		9AF8034894C02B97A1DF0DEC2B9EFB2B /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 95370AA458D47D65D8337D3981210C39 /* Pods-KavakTest.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-KavakTest/Pods-KavakTest-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-KavakTest/Pods-KavakTest.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
 		A0374B8CF9A7D6A45F6D116D698D1C19 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -467,7 +691,7 @@
 		};
 		C8AD4A4A1B14F6670057D74AE3A8A9F7 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = C4DE51AE60B8D861552BE9B05D56EC5D /* ConnectionLayer.release.xcconfig */;
+			baseConfigurationReference = EF19435B7E7A8A1671F12108E66C0123 /* ConnectionLayer.release.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_OBJC_WEAK = NO;
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -501,11 +725,10 @@
 			};
 			name = Release;
 		};
-		F6F7DBE53EDBA87498673481DA08C2A7 /* Release */ = {
+		F5D1844A3087D8668E3E9ADC8B35D163 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 95370AA458D47D65D8337D3981210C39 /* Pods-KavakTest.release.xcconfig */;
+			baseConfigurationReference = 14F947C9B09A0A9849185ACF72A26A46 /* NUTComponents.debug.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				CLANG_ENABLE_OBJC_WEAK = NO;
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -515,61 +738,22 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-KavakTest/Pods-KavakTest-Info.plist";
+				GCC_PREFIX_HEADER = "Target Support Files/NUTComponents/NUTComponents-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/NUTComponents/NUTComponents-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-KavakTest/Pods-KavakTest.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				MODULEMAP_FILE = "Target Support Files/NUTComponents/NUTComponents.modulemap";
+				PRODUCT_MODULE_NAME = NUTComponents;
+				PRODUCT_NAME = NUTComponents;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		FA349E941B6BCF44CA599D0BC4132263 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 43B88E22BBAE4A561EA7FCB1EF17C7C7 /* Pods-KavakTest.debug.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-KavakTest/Pods-KavakTest-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-KavakTest/Pods-KavakTest.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
@@ -579,15 +763,6 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		37B981E16E877A6DD73102D31BB7D69C /* Build configuration list for PBXNativeTarget "Pods-KavakTest" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				FA349E941B6BCF44CA599D0BC4132263 /* Debug */,
-				F6F7DBE53EDBA87498673481DA08C2A7 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
 		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -597,11 +772,29 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
+		85921EE905D5DA915E7D66F0B9AE6F69 /* Build configuration list for PBXNativeTarget "NUTComponents" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F5D1844A3087D8668E3E9ADC8B35D163 /* Debug */,
+				7B141C0EBF1E018831C75F4303FA77F2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		A4A458AC76EFB3EF2AE69784CB316774 /* Build configuration list for PBXNativeTarget "ConnectionLayer" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				341C60C133D6A8011C94009756AF4317 /* Debug */,
 				C8AD4A4A1B14F6670057D74AE3A8A9F7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F6FE8A5EA79106928DE3AD5201E838B2 /* Build configuration list for PBXNativeTarget "Pods-KavakTest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8D48D022182E61CCEA581CD703C64B3B /* Debug */,
+				9AF8034894C02B97A1DF0DEC2B9EFB2B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

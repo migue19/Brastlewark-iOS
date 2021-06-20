@@ -10,6 +10,7 @@ import UIKit
 class HomeVC: UIViewController {
     var presenter: HomePresenterProtocol?
     var dataSource: [citizensBrastlewark] = [citizensBrastlewark]()
+    var allData: [citizensBrastlewark] = [citizensBrastlewark]()
     @IBOutlet weak var collectionView: UICollectionView!
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -24,6 +25,7 @@ class HomeVC: UIViewController {
         collectionView.dataSource = self
         collectionView.delegate = self
         collectionView.register(nib, forCellWithReuseIdentifier: "HomeCollectionCell")
+        collectionView.register(UINib(nibName: "SearchCollectionReusableView", bundle: nil), forSupplementaryViewOfKind: UICollectionView.elementKindSectionHeader, withReuseIdentifier: "SearchCollectionReusableView")
         getData()
     }
     override func traitCollectionDidChange(_ previousTraitCollection: UITraitCollection?) {
@@ -41,10 +43,16 @@ extension HomeVC: UICollectionViewDelegateFlowLayout {
     }
 }
 extension HomeVC: UICollectionViewDelegate, UICollectionViewDataSource {
+    func collectionView(_ collectionView: UICollectionView, viewForSupplementaryElementOfKind kind: String, at indexPath: IndexPath) -> UICollectionReusableView {
+        guard let header = collectionView.dequeueReusableSupplementaryView(ofKind: UICollectionView.elementKindSectionHeader, withReuseIdentifier: "SearchCollectionReusableView", for: indexPath) as? SearchCollectionReusableView else {
+            return UICollectionReusableView()
+        }
+        header.searchBar.delegate = self
+        return header
+    }
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return dataSource.count
     }
-    
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "HomeCollectionCell", for: indexPath) as? HomeCollectionCell else { return UICollectionViewCell() }
         cell.setupCell(data: dataSource[indexPath.row])
@@ -54,10 +62,29 @@ extension HomeVC: UICollectionViewDelegate, UICollectionViewDataSource {
         presenter?.pressDetail(data: dataSource[indexPath.row])
     }
 }
+extension HomeVC: UISearchBarDelegate {
+    func searchBarSearchButtonClicked(_ searchBar: UISearchBar) {
+        guard let text = searchBar.text, !text.isEmpty else {
+            return
+        }
+        searchBar.endEditing(true)
+    }
+    func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
+        if searchText.isEmpty {
+            dataSource = allData
+        } else {
+            dataSource = dataSource.filter({ $0.name.contains(searchText)})
+        }
+    }
+    func searchBarTextDidEndEditing(_ searchBar: UISearchBar) {
+        collectionView.reloadData()
+    }
+}
 /// Protocolo para recibir datos de presenter.
 extension HomeVC: HomeViewProtocol {
     func showData(data: [citizensBrastlewark]) {
         dataSource = data
+        allData = data
         collectionView.reloadData()
     }
 }

@@ -23,6 +23,8 @@
 		F287F294267EE361009D5DDA /* HomeDetailProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = F287F28E267EE361009D5DDA /* HomeDetailProtocol.swift */; };
 		F287F29B267EE394009D5DDA /* HomeDetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F287F299267EE394009D5DDA /* HomeDetailVC.swift */; };
 		F287F29C267EE394009D5DDA /* HomeDetailVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = F287F29A267EE394009D5DDA /* HomeDetailVC.xib */; };
+		F2ACF580267FCCFE00186853 /* SearchCollectionReusableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2ACF57E267FCCFE00186853 /* SearchCollectionReusableView.swift */; };
+		F2ACF581267FCCFE00186853 /* SearchCollectionReusableView.xib in Resources */ = {isa = PBXBuildFile; fileRef = F2ACF57F267FCCFE00186853 /* SearchCollectionReusableView.xib */; };
 		F2D4951A267E8A7300C72E65 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2D49519267E8A7300C72E65 /* AppDelegate.swift */; };
 		F2D4951C267E8A7300C72E65 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2D4951B267E8A7300C72E65 /* SceneDelegate.swift */; };
 		F2D49523267E8A7300C72E65 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F2D49522267E8A7300C72E65 /* Assets.xcassets */; };
@@ -59,6 +61,8 @@
 		F287F28E267EE361009D5DDA /* HomeDetailProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeDetailProtocol.swift; sourceTree = "<group>"; };
 		F287F299267EE394009D5DDA /* HomeDetailVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeDetailVC.swift; sourceTree = "<group>"; };
 		F287F29A267EE394009D5DDA /* HomeDetailVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeDetailVC.xib; sourceTree = "<group>"; };
+		F2ACF57E267FCCFE00186853 /* SearchCollectionReusableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchCollectionReusableView.swift; sourceTree = "<group>"; };
+		F2ACF57F267FCCFE00186853 /* SearchCollectionReusableView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SearchCollectionReusableView.xib; sourceTree = "<group>"; };
 		F2D49516267E8A7300C72E65 /* KavakTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KavakTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F2D49519267E8A7300C72E65 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F2D4951B267E8A7300C72E65 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -114,6 +118,8 @@
 				F287F256267EAEE7009D5DDA /* HomeCollectionCell.xib */,
 				F287F25E267EB151009D5DDA /* HomeFriendCollectionCell.swift */,
 				F287F25F267EB151009D5DDA /* HomeFriendCollectionCell.xib */,
+				F2ACF57E267FCCFE00186853 /* SearchCollectionReusableView.swift */,
+				F2ACF57F267FCCFE00186853 /* SearchCollectionReusableView.xib */,
 			);
 			path = cell;
 			sourceTree = "<group>";
@@ -342,6 +348,7 @@
 				F2D49523267E8A7300C72E65 /* Assets.xcassets in Resources */,
 				F287F29C267EE394009D5DDA /* HomeDetailVC.xib in Resources */,
 				F287F261267EB151009D5DDA /* HomeFriendCollectionCell.xib in Resources */,
+				F2ACF581267FCCFE00186853 /* SearchCollectionReusableView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -404,6 +411,7 @@
 				F2D4953A267E8B4C00C72E65 /* HomeRouter.swift in Sources */,
 				F2D4951A267E8A7300C72E65 /* AppDelegate.swift in Sources */,
 				F2F73062267F9F6900B4EBE0 /* InformationCell.swift in Sources */,
+				F2ACF580267FCCFE00186853 /* SearchCollectionReusableView.swift in Sources */,
 				F287F260267EB151009D5DDA /* HomeFriendCollectionCell.swift in Sources */,
 				F2D4953B267E8B4C00C72E65 /* HomeInteractor.swift in Sources */,
 				F287F29B267EE394009D5DDA /* HomeDetailVC.swift in Sources */,

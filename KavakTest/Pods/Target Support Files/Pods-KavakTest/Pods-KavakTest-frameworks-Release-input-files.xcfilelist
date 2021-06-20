@@ -1,2 +1,3 @@
 ${PODS_ROOT}/Target Support Files/Pods-KavakTest/Pods-KavakTest-frameworks.sh
 ${BUILT_PRODUCTS_DIR}/ConnectionLayer/ConnectionLayer.framework
+${BUILT_PRODUCTS_DIR}/NUTComponents/NUTComponents.framework
