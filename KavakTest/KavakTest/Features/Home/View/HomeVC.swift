@@ -25,6 +25,9 @@ class HomeVC: UIViewController {
         collectionView.register(nib, forCellWithReuseIdentifier: "HomeCollectionCell")
         getData()
     }
+    override func traitCollectionDidChange(_ previousTraitCollection: UITraitCollection?) {
+        collectionView.reloadData()
+    }
 }
 extension HomeVC: UICollectionViewDelegateFlowLayout {
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {

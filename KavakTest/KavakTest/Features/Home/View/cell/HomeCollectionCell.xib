@@ -17,19 +17,19 @@
                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                 <subviews>
                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="zmN-KO-nZv" customClass="ImageLoader" customModule="KavakTest" customModuleProvider="target">
-                        <rect key="frame" x="0.0" y="0.0" width="194" height="100"/>
+                        <rect key="frame" x="0.0" y="0.0" width="194" height="150"/>
                         <constraints>
-                            <constraint firstAttribute="height" constant="100" id="krB-Ns-0LD"/>
+                            <constraint firstAttribute="height" constant="150" id="krB-Ns-0LD"/>
                         </constraints>
                     </imageView>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="vBQ-0j-CRD">
-                        <rect key="frame" x="8" y="100" width="178" height="21"/>
+                        <rect key="frame" x="8" y="150" width="178" height="21"/>
                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
                     </label>
                     <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="7tb-Ke-uMN">
-                        <rect key="frame" x="0.0" y="121" width="194" height="97"/>
+                        <rect key="frame" x="0.0" y="179" width="194" height="39"/>
                         <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="ydt-ez-lfi">
                             <size key="itemSize" width="128" height="128"/>
                             <size key="headerReferenceSize" width="0.0" height="0.0"/>
@@ -46,7 +46,7 @@
                 <constraint firstItem="zmN-KO-nZv" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="Lxg-eJ-lv7"/>
                 <constraint firstAttribute="trailing" secondItem="7tb-Ke-uMN" secondAttribute="trailing" id="Qk3-r4-NK2"/>
                 <constraint firstItem="zmN-KO-nZv" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="WbO-mB-5X2"/>
-                <constraint firstItem="7tb-Ke-uMN" firstAttribute="top" secondItem="vBQ-0j-CRD" secondAttribute="bottom" id="aQ9-AQ-faV"/>
+                <constraint firstItem="7tb-Ke-uMN" firstAttribute="top" secondItem="vBQ-0j-CRD" secondAttribute="bottom" constant="8" id="aQ9-AQ-faV"/>
                 <constraint firstItem="vBQ-0j-CRD" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="8" id="bte-Yw-RiJ"/>
                 <constraint firstAttribute="bottom" secondItem="7tb-Ke-uMN" secondAttribute="bottom" id="mAf-cl-aCQ"/>
                 <constraint firstItem="vBQ-0j-CRD" firstAttribute="top" secondItem="zmN-KO-nZv" secondAttribute="bottom" id="rfx-PC-873"/>
@@ -54,6 +54,7 @@
             </constraints>
             <size key="customSize" width="194" height="218"/>
             <connections>
+                <outlet property="collectionView" destination="7tb-Ke-uMN" id="SaA-9R-F9g"/>
                 <outlet property="imageView" destination="zmN-KO-nZv" id="bJv-iM-50e"/>
                 <outlet property="nameLabel" destination="vBQ-0j-CRD" id="dKA-ZT-hlZ"/>
             </connections>
