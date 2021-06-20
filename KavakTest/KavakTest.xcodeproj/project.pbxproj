@@ -106,6 +106,38 @@
 			path = Commons;
 			sourceTree = "<group>";
 		};
+		F287F280267EDFB2009D5DDA /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				F2D49533267E8B4C00C72E65 /* HomePresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		F287F281267EDFBD009D5DDA /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				F2D49536267E8B4C00C72E65 /* HomeProtocol.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		F287F282267EDFCA009D5DDA /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				F2D49534267E8B4C00C72E65 /* HomeRouter.swift */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		F287F283267EDFD8009D5DDA /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				F2D49535267E8B4C00C72E65 /* HomeInteractor.swift */,
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
 		F2D4950D267E8A7300C72E65 = {
 			isa = PBXGroup;
 			children = (
@@ -150,12 +182,12 @@
 		F2D49531267E8B3100C72E65 /* Home */ = {
 			isa = PBXGroup;
 			children = (
+				F287F283267EDFD8009D5DDA /* Interactor */,
+				F287F282267EDFCA009D5DDA /* Router */,
+				F287F281267EDFBD009D5DDA /* Protocols */,
+				F287F280267EDFB2009D5DDA /* Presenter */,
 				F2D62D70267E925E00FA2DAC /* Entity */,
 				F2D62D6F267E925200FA2DAC /* View */,
-				F2D49533267E8B4C00C72E65 /* HomePresenter.swift */,
-				F2D49534267E8B4C00C72E65 /* HomeRouter.swift */,
-				F2D49535267E8B4C00C72E65 /* HomeInteractor.swift */,
-				F2D49536267E8B4C00C72E65 /* HomeProtocol.swift */,
 			);
 			path = Home;
 			sourceTree = "<group>";
