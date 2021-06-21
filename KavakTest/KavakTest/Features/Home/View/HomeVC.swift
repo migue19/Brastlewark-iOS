@@ -9,9 +9,12 @@ import UIKit
 
 class HomeVC: UIViewController {
     @IBOutlet weak var searchBar: UISearchBar!
+    @IBOutlet weak var professionsText: UITextField!
     var presenter: HomePresenterProtocol?
+    let professionPicker = UIPickerView()
     var dataSource: [citizensBrastlewark] = [citizensBrastlewark]()
     var allData: [citizensBrastlewark] = [citizensBrastlewark]()
+    var professions: [String] = [String]()
     @IBOutlet weak var collectionView: UICollectionView!
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -28,7 +31,42 @@ class HomeVC: UIViewController {
         collectionView.register(UINib(nibName: "HomeCollectionCell", bundle: nil), forCellWithReuseIdentifier: "HomeCollectionCell")
         getData()
     }
+    func setupProfessionsPicker() {
+        professions = [String]()
+        professions.append("Selecciona Profesion")
+        professions.append(contentsOf: allData.flatMap({$0.professions}).uniqued().sorted(by: <))
+        professionsText.inputView = professionPicker
+        professionPicker.delegate = self
+        professionPicker.dataSource = self
+        professionsText.autocorrectionType = .no
+        let toolBar = UIToolbar()
+        toolBar.barStyle = .default
+        toolBar.isTranslucent = true
+        toolBar.tintColor = .blue_color
+        toolBar.sizeToFit()
+        let doneButton = UIBarButtonItem(title: "Seleccionar", style: .done, target: self, action: #selector(doneRoutePicker))
+        let spaceButton = UIBarButtonItem(barButtonSystemItem: .flexibleSpace, target: nil, action: nil)
+        let cancelButton = UIBarButtonItem(title: "Cancelar", style: .plain, target: self, action: #selector(cancelRoute))
+        toolBar.setItems([cancelButton, spaceButton, doneButton], animated: false)
+        toolBar.isUserInteractionEnabled = true
+        professionsText.inputAccessoryView = toolBar
+    }
+    @objc func doneRoutePicker(){
+        professionsText.resignFirstResponder()
+        let select = professionPicker.selectedRow(inComponent: 0)
+        let profession = professions[select]
+        professionsText.text = profession
+        updateData(profession: profession)
+    }
+    @objc func cancelRoute(){
+        professionsText.resignFirstResponder()
+    }
     override func traitCollectionDidChange(_ previousTraitCollection: UITraitCollection?) {
+        collectionView.reloadData()
+    }
+    func updateData(profession: String) {
+        dataSource = allData
+        dataSource = dataSource.filter({ $0.professions.contains(profession) })
         collectionView.reloadData()
     }
 }
@@ -81,11 +119,23 @@ extension HomeVC: UISearchBarDelegate {
         collectionView.reloadData()
     }
 }
+extension HomeVC: UIPickerViewDelegate,UIPickerViewDataSource {
+    func numberOfComponents(in pickerView: UIPickerView) -> Int {
+        return 1
+    }
+    func pickerView(_ pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int {
+        return professions.count
+    }
+    func pickerView(_ pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
+        return professions[row]
+    }
+}
 /// Protocolo para recibir datos de presenter.
 extension HomeVC: HomeViewProtocol {
     func showData(data: [citizensBrastlewark]) {
         dataSource = data
         allData = data
+        setupProfessionsPicker()
         collectionView.reloadData()
     }
 }
